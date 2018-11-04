@@ -11,19 +11,9 @@ class CashRegister
     @discount = discount
     @items = []
   end
-  #
-  # def discount
-  #   @discount
-  # end
-  #
-  # def total
-  #   @total
-  # end
-  #
-  #binding.pry
 
   def add_item(title, price, quantity = 1)
-    @quantity = quantity
+    # @quantity = quantity
 
     if quantity > 1
       quantity.times do

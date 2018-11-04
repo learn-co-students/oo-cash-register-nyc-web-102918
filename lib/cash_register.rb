@@ -23,15 +23,15 @@ class CashRegister
       self.items << title
     end
 
-    @total += price * quantity
+    self.total += price * quantity
     self.last_transaction = price * quantity
   end
 
 
   def apply_discount
-    @total = @total * (100 - @discount)/100 #discoutn is 20%
-    return "There is no discount to apply." if @discount == 0
-    return "After the discount, the total comes to $#{@total}."
+    self.total = self.total * (100 - self.discount)/100 #discoutn is 20%
+    return "There is no discount to apply." if self.discount == 0
+    return "After the discount, the total comes to $#{self.total}."
   end
 
 #binding.pry
